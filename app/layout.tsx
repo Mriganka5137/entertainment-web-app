@@ -25,9 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${outfit.variable}`}>
-        <main className=" bg-color-custom-red h-screen font-outfit">
-          {children}
-        </main>
+        <main className=" font-outfit h-full">{children}</main>
       </body>
     </html>
   );

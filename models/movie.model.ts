@@ -79,5 +79,4 @@ const movieSchema = new Schema<IMovie>(
   { timestamps: true }
 );
 
-const Movie = model<IMovie>("Movie", movieSchema);
-export default Movie;
+export const Movie = model<IMovie>("Movie", movieSchema);
