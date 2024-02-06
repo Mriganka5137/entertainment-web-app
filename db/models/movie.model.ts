@@ -1,4 +1,4 @@
-import { Schema, model, Document } from "mongoose";
+import { Schema, model, Document, models } from "mongoose";
 
 type MovieRating = "E" | "PG" | "18+";
 
@@ -79,4 +79,4 @@ const movieSchema = new Schema<IMovie>(
   { timestamps: true }
 );
 
-export const Movie = model<IMovie>("Movie", movieSchema);
+export const Movie = models.Movie || model<IMovie>("Movie", movieSchema);
